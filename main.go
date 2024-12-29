@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	// Use IPv4 loopback (127.0.0.1) instead of IPv6 (::1)
 	dsn := "root:password@tcp(127.0.0.1:3306)/exampledb"
 	db, err := sql.Open("mysql", dsn)
 	if err != nil {
